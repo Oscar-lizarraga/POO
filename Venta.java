@@ -26,6 +26,19 @@ public class Venta
 	public int getTotalArticulos(){ return this.totalArticulos;} 
 	public ArrayList getArticulos(){ return this.articulos;}
 
+
+	Venta(int idventa, int idempleado, LocalDate fechaVenta, float totalVenta, 
+		float totalCosto, int totalArticulos, ArrayList<Articulo> articulos)
+	{
+		this.idventa = idventa
+		this.idempelado = idempleado;
+		this.fechaVenta = fechaVenta;
+		this.totalCosto = totalCosto;
+		this.totalVenta = totalVenta;
+		this.totalArticulos = totalArticulos;
+		this.articulos = articulos;
+	}
+
 	//Methods
 	public String agregarVenta(Venta venta)
 	{
