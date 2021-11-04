@@ -69,14 +69,26 @@ Se requiere crear un programa para la gestion de horarios de salas, para la vent
 	- descripcion: String
 	- precio costo: Double
 	- precio venta: Double
+	-------------------------
+	+agregarArticulo();
+	+editarArticulo();
+	+eliminarArticulo();
+	+mostrarArticulos();
+	+buscarArticuloPorCodigo();
 
 *Clase Venta
 	- id venta: int
+	- id empleado: int
 	- fecha de venta: Date
 	- total de venta: Double
 	- total de costo: Double
 	- total de articulos: int
 	- articulos: Arralist<Articulo>
+	-------------------------
+	+ agregarVenta();
+	+ eliminarVenta();
+	+ mostrarVentasPorDiaPorEmpleado();
+	+ mostrarVentasPorDia();
 
 //Accesos
 Clase Empleado
