@@ -1,43 +1,20 @@
 
 package proyectocine;
 
-import java.util.ArrayList;
-
 public class Sala {
     private int idSala;
-    private int numeroAsienontos=100;//inicioalizando nuemro de asientos de la sala
+    private int numeroAsienontos;
     private int costoSala;
     private TipoSala tipoSala;
     
     //constructor
-    public Sala(int idSala, TipoSala tipoSala) {
+    public Sala(int idSala, int numeroAsienontos, int costoSala, TipoSala tipoSala) {
         this.idSala = idSala;
+        this.numeroAsienontos = numeroAsienontos;
+        this.costoSala = costoSala;
         this.tipoSala = tipoSala;
     }
     
-    //metodos
-    public ArrayList<Sala> mostrarSalas(){
-        ArrayList<Sala> sala = null;
-       
-        return sala;
-    }
-    
-     public ArrayList<Sala> buscarSala(){
-        ArrayList<Sala> sala = null;
-       
-        return sala;
-    }
-    
-     public String EliminarSala(){
-    
-    }
-     
-     public void agregarSala(Sala sal) {
-       
-			
-    }
-     
-     
     
     //getters y setters
     public int getIdSala() {
