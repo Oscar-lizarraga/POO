@@ -1,4 +1,4 @@
-package cinepolito;
+package Capadatos;
 
 public class Articulo {
 
@@ -8,7 +8,8 @@ public class Articulo {
 	private Double precioVenta;
 	private int cantidadArticulo;
 	private boolean estado;
-	//Constructor con todos los parametros
+
+
 	public Articulo(String codigo, String descripcion, Double precioProvedor, Double precioVenta, int cantidadArticulo,
 			boolean estado) {
 		this.codigo = codigo;

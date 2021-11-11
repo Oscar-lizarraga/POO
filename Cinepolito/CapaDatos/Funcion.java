@@ -1,9 +1,10 @@
-package cineMAC;
+package Capadatos;
 
 import java.util.Date;
 import java.util.ArrayList;
 
-public class Funcion {
+public class Funcion 
+{
 	private	int		idFunction;
 	private String	descripcion;
 	private Date	duracion;
@@ -80,15 +81,15 @@ public class Funcion {
 		
 	}
 	public ArrayList<Funcion> buscarFuncionesPorDescripcion(String descripcion) {
-		
+		return null;
 	}
 	public ArrayList<Funcion> buscarFuncionesPorHora(Date hora){
-		
+		return null;
 	}
 	public ArrayList<Funcion> buscarFuncionesPorDia(Date dia){
-		
+		return null;
 	}
 	public ArrayList<Funcion> buscarSalasFuncionesPorDia(Date dia){
-		
+		return null;
 	}
 }
