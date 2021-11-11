@@ -1,12 +1,12 @@
 public class Venta
 {
 	private int idventa;
-	private int idempelado;
 	private LocalDate fechaVenta;
-	private float totalVenta;
-	private float totalCosto;
+	private Double totalVenta;
+	private Double totalCosto;
 	private int totalArticulos;
 	private ArrayList<Articulo> articulos;
+	private FormaPago formaPago
 
 	//setters
 	public void setIdVenta(int idventa){ this.idventa = idventa;} 
@@ -16,15 +16,17 @@ public class Venta
 	public void setTotalCosto(float totalCosto){ this.totalCosto = totalCosto;}
 	public void setTotalArticulos(int totalArticulos){ this.totalArticulos = totalArticulos;} 
 	public void setArticulos(ArrayList<Articulo> articulos){ this.articulos = articulos;}
+	public void setFormaPago(FormaPago formaPago){this.formaPago = formaPago}
 
 	//getters
 	public int getIdVenta(){ return this.idventa;} 
 	public int getIdEmpleado(){ return this.idempelado;}
 	public LocalDate getFechaVenta(){ return this.fechaVenta;} 
-	public float getTotalVenta(){ return this.totalVenta;} 
-	public float getTotalCosto(){ return this.totalCosto;}
+	public Double getTotalVenta(){ return this.totalVenta;} 
+	public Double getTotalCosto(){ return this.totalCosto;}
 	public int getTotalArticulos(){ return this.totalArticulos;} 
 	public ArrayList getArticulos(){ return this.articulos;}
+	public FormaPago getFormaPago(){return this.formaPago;}
 
 
 	Venta(int idventa, int idempleado, LocalDate fechaVenta, float totalVenta, 
@@ -40,29 +42,24 @@ public class Venta
 	}
 
 	//Methods
-	public String agregarVenta(Venta venta)
+	public String agregarArticulo(Venta venta)
 	{
 		return String = "";
 	}
 
-	public String editarVenta(Venta venta)
+	public String eliminarArticulo(Venta venta)
 	{
 		return String = "";
 	}
 
-	public String eliminarVenta(Venta venta)
+	public String mostrarArticulos(Venta venta)
 	{
 		return String = "";
 	}	
 
-	public ArrayList<Articulo> mostrarVentaPorEmpledo()
+	public Double ventaTotalDelDia()
 	{
-		return null;
-	}
-
-	public ArrayList<Articulo> mostrarVentasPorDia()
-	{
-		return null;
+		return 0.0;
 	}
 
 }
